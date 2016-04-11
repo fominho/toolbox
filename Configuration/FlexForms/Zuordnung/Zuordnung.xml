@@ -1,0 +1,87 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Dndzuordnung->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Card width -->
+			<settings.dndZuordnungcardWidth>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndZuordnungcardWidth</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.dndZuordnungcardWidth>
+
+			<settings.dndZuordnungcardWidth_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.dndZuordnungcardWidth:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndZuordnungcardWidth</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.dndZuordnungcardWidth_local>
+		<!-- END
+		Card width -->
+
+
+		<!-- START
+		Card height -->
+			<settings.dndZuordnungcardHeight>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndZuordnungcardHeight</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.dndZuordnungcardHeight>
+
+			<settings.dndZuordnungcardHeight_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.dndZuordnungcardHeight:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndZuordnungcardHeight</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.dndZuordnungcardHeight_local>
+		<!-- END
+		Card height -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

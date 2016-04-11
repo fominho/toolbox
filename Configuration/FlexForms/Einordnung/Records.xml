@@ -1,0 +1,70 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang_db.xlf:records</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Dndeinordnung->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Einordnung Record -->
+			<settings.einordnung_record>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang_db.xlf:einordnung_record</label>
+					<config>
+						<type>inline</type>
+						<languageMode>inherit</languageMode>
+						<foreign_table>tx_ltubetoolbox_domain_model_dndeinordnung</foreign_table>
+						<foreign_field>parentid</foreign_field>
+						<foreign_table_field>parenttable</foreign_table_field>
+						<appearance>
+							<useSortable>1</useSortable>
+							<showPossibleLocalizationRecords>1</showPossibleLocalizationRecords>
+							<showAllLocalizationLink>1</showAllLocalizationLink>
+							<showSynchronizationLink>1</showSynchronizationLink>
+							<newRecordLinkPosition>bottom</newRecordLinkPosition>
+						</appearance>
+						<behaviour>
+							<localizationMode>select</localizationMode>
+							<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+						</behaviour>
+					</config>
+				</TCEforms>
+			</settings.einordnung_record>
+		<!-- END
+		Einordnung Record -->
+
+		<!-- START
+		Einordnung Feedback record -->
+			<settings.einordnungFeedback_record>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang_db.xlf:einordnung_feedback_record</label>
+					<config>
+						<type>inline</type>
+						<languageMode>inherit</languageMode>
+						<foreign_table>tx_ltubetoolbox_domain_model_dndeinordngfeedback</foreign_table>
+						<foreign_field>parentid</foreign_field>
+						<foreign_table_field>parenttable</foreign_table_field>
+						<appearance>
+							<useSortable>1</useSortable>
+							<showPossibleLocalizationRecords>1</showPossibleLocalizationRecords>
+							<showAllLocalizationLink>1</showAllLocalizationLink>
+							<showSynchronizationLink>1</showSynchronizationLink>
+							<newRecordLinkPosition>bottom</newRecordLinkPosition>
+						</appearance>
+						<behaviour>
+							<localizationMode>select</localizationMode>
+							<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+						</behaviour>
+					</config>
+				</TCEforms>
+			</settings.einordnungFeedback_record>
+		<!-- END
+		Einordnung Feedback record -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

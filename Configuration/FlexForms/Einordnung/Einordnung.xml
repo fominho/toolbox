@@ -1,0 +1,119 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Dndeinordnung->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Left column title -->
+			<settings.dndEinordnungLeftColumnLabel>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungLeftColumnLabel</label>
+					<config>
+						<type>input</type>
+						<size>100</size>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungLeftColumnLabel>
+		<!-- END
+		Left column title -->
+
+
+		<!-- START
+		Right column title -->
+			<settings.dndEinordnungRightColumnLabel>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungRightColumnLabel</label>
+					<config>
+						<type>input</type>
+						<size>100</size>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungRightColumnLabel>
+		<!-- END
+		Right column title -->
+
+
+		<!-- START
+		Card width -->
+			<settings.dndEinordnungcardWidth>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungcardWidth</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungcardWidth>
+
+			<settings.dndEinordnungcardWidth_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.dndEinordnungcardWidth:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungcardWidth</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungcardWidth_local>
+		<!-- END
+		Card width -->
+
+
+		<!-- START
+		Card height -->
+			<settings.dndEinordnungcardHeight>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungcardHeight</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungcardHeight>
+
+			<settings.dndEinordnungcardHeight_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.dndEinordnungcardHeight:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dndEinordnungcardHeight</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.dndEinordnungcardHeight_local>
+		<!-- END
+		Card height -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

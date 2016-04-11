@@ -1,0 +1,111 @@
+<T3DataStructure>
+<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Hangmanquestion->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Question background color -->
+			<settings.hangmanquestionBg>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.hman_question_bg_color</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.hangmanquestionBg>
+
+			<settings.hangmanquestionBg_local>
+				<TCEforms>
+					<displayCond>FIELD:settings.hangmanquestionBg:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.hman_question_bg_color</label>
+					<config>
+						<type>input</type>
+						<size>6</size>
+						<wizards>
+							<color>
+								<type>colorbox</type>
+								<dim>20x20</dim>
+								<tableStyle>margin-top:3px;</tableStyle>
+								<module>
+									<name>wizard_colorpicker</name>
+								</module>
+								<JSopenParams>height=550,width=370,status=0,menubar=0,scrollbars=1</JSopenParams>
+								<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+							</color>
+						</wizards>
+						<default>#D9F3F3</default>
+						<max>7</max>
+					</config>
+				</TCEforms>
+			</settings.hangmanquestionBg_local>
+		<!-- END
+		Question background color -->
+
+
+		<!-- START
+		Answer background color -->
+			<settings.hangmananswerBg>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.hman_answer_bg_color</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.hangmananswerBg>
+
+			<settings.hangmananswerBg_local>
+				<TCEforms>
+					<displayCond>FIELD:settings.hangmananswerBg:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.hman_answer_bg_color</label>
+					<config>
+						<type>input</type>
+						<size>6</size>
+						<wizards>
+							<color>
+								<type>colorbox</type>
+								<dim>20x20</dim>
+								<tableStyle>margin-top:3px;</tableStyle>
+								<module>
+									<name>wizard_colorpicker</name>
+								</module>
+								<JSopenParams>height=550,width=370,status=0,menubar=0,scrollbars=1</JSopenParams>
+								<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+							</color>
+						</wizards>
+						<default>#DBEDFF</default>
+						<max>7</max>
+					</config>
+				</TCEforms>
+			</settings.hangmananswerBg_local>
+		<!-- END
+		Answer background color -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

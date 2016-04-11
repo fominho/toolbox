@@ -1,0 +1,25 @@
+
+<f:if condition="{countPerLine} == 1">
+    <ul id="tx_toolbox_one_col" >
+        <f:for each="{flashcards}" as="fc" iteration="cardIterator">
+            <f:render partial="Flashcard/Card" arguments="{_all}" />
+            <BR style="clear:both"><BR style="clear:both">
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{countPerLine} == 2">
+    <ul  id="tx_toolbox_two_col">
+        <f:for each="{flashcards}" as="fc" iteration="cardIterator">
+            <f:if condition="{cardIterator.cycle} % 2">
+                <f:then>
+                    <f:render partial="Flashcard/Card" arguments="{_all}" />
+                </f:then>
+                <f:else>
+                    <f:render partial="Flashcard/Card" arguments="{_all}" />
+                    <BR style="clear:both">
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+</f:if>

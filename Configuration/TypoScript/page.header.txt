@@ -1,0 +1,17 @@
+
+page = PAGE
+page {
+
+    includeCSS {
+        toolbox = typo3conf/ext/ltube_toolbox/Resources/Public/css/toolbox.min.css
+    }
+
+    includeJS {
+        ym = typo3conf/ext/ltube_toolbox/Resources/Public/Vendor/Ym/modules.js
+    }
+
+    includeJSFooter {
+        toolbox = typo3conf/ext/ltube_toolbox/Resources/Public/js/toolbox.min.js
+    }
+
+}

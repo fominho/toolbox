@@ -1,0 +1,106 @@
+ plugin.tx_ltubetoolbox {
+	settings {
+        # cat=plugin.tx_ltubetoolbox//a; type=color; label= Submit Buttons color
+	    submitButton = green
+	    # cat=plugin.tx_ltubetoolbox//a; type=color; label= General Buttons color
+	    generalButton = black
+
+		flashcard {
+		    # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Flashcard Width
+		    width        = 250
+
+		    # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Flashcard Height
+		    height       = 250
+
+		    # cat=plugin.tx_ltubetoolbox//a; type=boolean; label= Is that a quiz ?
+		    quiz         = 1
+
+		    # cat=plugin.tx_ltubetoolbox//a; type=options[1, 2]; label= How many cards of one line ?
+		    countPerLine = 2
+
+		    entity {
+		        fe {
+		            # cat=plugin.tx_ltubetoolbox//a; type=color; label= FE Font Color
+		            fontColor       = #ffffff
+
+		            # cat=plugin.tx_ltubetoolbox//a; type=color; label= FE Background Color
+		            backgroundColor = #D8D9DB
+		        }
+
+		        be {
+		            # cat=plugin.tx_ltubetoolbox//a; type=color; label= BE Font Color
+		            fontColor       = #ffffff
+
+		            # cat=plugin.tx_ltubetoolbox//a; type=color; label= BE Background Color
+		            backgroundColor = #065691
+		        }
+
+		        # cat=plugin.tx_ltubetoolbox//a; type=options[x, y]; label= Flip direction
+		        direction = y
+		    }
+		}
+
+		einordnung {
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Drag & Drop Einordnung Width
+            width = 250
+
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Drag & Drop Einordnung Height
+            height = 250
+		}
+
+		zuordnung {
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Drag & Drop Zuordnung Width
+            width = 250
+
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Drag & Drop Zuordnung Height
+            height = 450
+		}
+
+		quiz {
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Quiz Width
+            width = 150
+
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Quit Height
+            height = 150
+
+             # cat=plugin.tx_ltubetoolbox//a; type=color; label= Quiz Area Background Color
+            backgroundColor = #EF7F01
+
+            # cat=plugin.tx_ltubetoolbox//a; type=color; label= Quiz card Background Color
+            cardBackgroundColor = #000
+		}
+
+		hangman {
+		    # cat=plugin.tx_ltubetoolbox//a; type=color; label= Hangman Question Background Color
+            questionBackgroundColor = #D9F3F3
+
+            # cat=plugin.tx_ltubetoolbox//a; type=color; label= Hangman Answer Background Color
+            answerBackgroundColor = #DBEDFF
+		}
+
+		chart {
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Chart Width
+            width = 450
+
+            # cat=plugin.tx_ltubetoolbox//a; type=int+; label= Chart Height
+            height = 450
+
+            # cat=plugin.tx_ltubetoolbox//a; type=options[Pie Chart, Horizontal Bar, Vertical Bar]; label= Chart type
+            type = Pie Chart
+		}
+
+	}
+
+	view {
+		# cat=plugin.tx_ltubetoolbox/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ltube_toolbox/Resources/Private/Templates/
+		# cat=plugin.tx_ltubetoolbox/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ltube_toolbox/Resources/Private/Partials/
+		# cat=plugin.tx_ltubetoolbox/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ltube_toolbox/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_ltubetoolbox//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

@@ -1,0 +1,69 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ltube_toolbox/Configuration/TypoScript/page.header.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ltube_toolbox/Configuration/TypoScript/Action/dnd_rank.txt">
+
+plugin.tx_ltubetoolbox {
+	view {
+		templateRootPath = {$plugin.tx_ltubetoolbox.view.templateRootPath}
+		partialRootPath  = {$plugin.tx_ltubetoolbox.view.partialRootPath}
+		layoutRootPath   = {$plugin.tx_ltubetoolbox.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_ltubetoolbox.persistence.storagePid}
+	}
+}
+
+
+plugin.tx_ltubetoolbox.settings {
+
+    submitButtonColor  = {$plugin.tx_ltubetoolbox.settings.submitButton}
+    generalButtonColor = {$plugin.tx_ltubetoolbox.settings.generalButton}
+
+    flashcard {
+        width        = {$plugin.tx_ltubetoolbox.settings.flashcard.width}
+        height       = {$plugin.tx_ltubetoolbox.settings.flashcard.height}
+        paging       = {$plugin.tx_ltubetoolbox.settings.flashcard.quiz}
+        _in_one_line = {$plugin.tx_ltubetoolbox.settings.flashcard.countPerLine}
+
+         entity {
+             fe {
+                 fontColor = {$plugin.tx_ltubetoolbox.settings.flashcard.entity.fe.fontColor}
+                 backgroundColor = {$plugin.tx_ltubetoolbox.settings.flashcard.entity.fe.backgroundColor}
+             }
+
+              be {
+                  fontColor =  {$plugin.tx_ltubetoolbox.settings.flashcard.entity.be.fontColor}
+                  backgroundColor =  {$plugin.tx_ltubetoolbox.settings.flashcard.entity.be.backgroundColor}
+              }
+
+              direction = {$plugin.tx_ltubetoolbox.settings.flashcard.entity.direction}
+        }
+    }
+
+    dndEinordnung {
+        cardWidth  = {$plugin.tx_ltubetoolbox.settings.einordnung.width}
+        cardHeight = {$plugin.tx_ltubetoolbox.settings.einordnung.height}
+    }
+
+    dndZuordnung {
+        cardWidth  = {$plugin.tx_ltubetoolbox.settings.zuordnung.width}
+        cardHeight = {$plugin.tx_ltubetoolbox.settings.zuordnung.height}
+    }
+
+    quiz {
+        cardWidth   = {$plugin.tx_ltubetoolbox.settings.quiz.width}
+        cardHeight  = {$plugin.tx_ltubetoolbox.settings.quiz.height}
+        BgColor     = {$plugin.tx_ltubetoolbox.settings.quiz.backgroundColor}
+        cardBgColor = {$plugin.tx_ltubetoolbox.settings.quiz.cardBackgroundColor}
+    }
+
+    hangman {
+        questionBg = {$plugin.tx_ltubetoolbox.settings.hangman.questionBackgroundColor}
+        answerBg   = {$plugin.tx_ltubetoolbox.settings.hangman.answerBackgroundColor}
+    }
+
+    chart {
+        width  = {$plugin.tx_ltubetoolbox.settings.chart.width}
+        height = {$plugin.tx_ltubetoolbox.settings.chart.height}
+        type   = {$plugin.tx_ltubetoolbox.settings.chart.type}
+    }
+}

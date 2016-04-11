@@ -1,0 +1,29 @@
+<T3DataStructure>
+	<sheets>
+
+		<sDEF>EXT:ltube_toolbox/Configuration/FlexForms/Actions.xml</sDEF>
+
+		<flashcard>EXT:ltube_toolbox/Configuration/FlexForms/Flashcard/Flashcard.xml</flashcard>
+		<flashcard_records>EXT:ltube_toolbox/Configuration/FlexForms/Flashcard/Records.xml</flashcard_records>
+
+		<dragAndDropEinordnung>EXT:ltube_toolbox/Configuration/FlexForms/Einordnung/Einordnung.xml</dragAndDropEinordnung>
+		<dragAndDropEinordnung_records>EXT:ltube_toolbox/Configuration/FlexForms/Einordnung/Records.xml</dragAndDropEinordnung_records>
+
+		<dragAndDropZuordnung>EXT:ltube_toolbox/Configuration/FlexForms/Zuordnung/Zuordnung.xml</dragAndDropZuordnung>
+		<dragAndDropZuordnung_records>EXT:ltube_toolbox/Configuration/FlexForms/Zuordnung/Records.xml</dragAndDropZuordnung_records>
+
+		<quiz>EXT:ltube_toolbox/Configuration/FlexForms/Quiz/Quiz.xml</quiz>
+		<quiz_records>EXT:ltube_toolbox/Configuration/FlexForms/Quiz/Records.xml</quiz_records>
+
+		<chart>EXT:ltube_toolbox/Configuration/FlexForms/Chart/Chart.xml</chart>
+		<chart_records>EXT:ltube_toolbox/Configuration/FlexForms/Chart/Records.xml</chart_records>
+
+		<hangman>EXT:ltube_toolbox/Configuration/FlexForms/Hangman/Hangman.xml</hangman>
+		<hangman_records>EXT:ltube_toolbox/Configuration/FlexForms/Hangman/Records.xml</hangman_records>
+
+		<qha_records>EXT:ltube_toolbox/Configuration/FlexForms/QuestionHintAnswer/Records.xml</qha_records>
+
+		<ranking_records>EXT:ltube_toolbox/Configuration/FlexForms/Ranking/Records.xml</ranking_records>
+
+	</sheets>
+</T3DataStructure>

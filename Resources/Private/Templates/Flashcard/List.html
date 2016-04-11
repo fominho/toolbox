@@ -1,0 +1,19 @@
+{namespace fcard=TYPO3\LtubeToolbox\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<f:if condition="{isQuiz} != 1">
+		<f:render partial="Flashcard/State/NotQuiz" arguments="{_all}" />
+	</f:if>
+
+	<f:if condition="{isQuiz} == 1">
+		<ul id="tx_toolbox_pagination" cur_lang="{cur_lang}" data-pagination-button-color="{settings.generalButtonColor}" >
+			<f:for each="{flashcards}" as="fc" iteration="cardIterator">
+				<f:render partial="Flashcard/Card" arguments="{_all}" />
+			</f:for>
+		</ul>
+	</f:if>
+
+</f:section>

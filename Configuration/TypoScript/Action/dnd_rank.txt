@@ -1,0 +1,30 @@
+
+tx_ltubetoolbox_ajaxRankingCheck = PAGE
+tx_ltubetoolbox_ajaxRankingCheck {
+	typeNum = 995
+	config {
+		disableAllHeaderCode = 1
+		xhtml_cleaning = 0
+		admPanel = 0
+		additionalHeaders = Content-type: text/plain
+		no_cache = 0
+	}
+
+	10 = USER
+	10 {
+		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+		extensionName = LtubeToolbox
+		pluginName = Pi1
+		vendorName = TYPO3
+		controller = Dndrank
+		switchableControllerActions {
+			Dndrank {
+				1 = list
+				2 = check
+			}
+		}
+		view < plugin.tx_ltubetoolbox.view
+		persistence < plugin.tx_ltubetoolbox.persistence
+		settings < plugin.tx_ltubetoolbox.settings
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Public",
+  "authors": [
+    "iMac <borulkosergey@icloud.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flip": "~1.0.20"
+  }
+}

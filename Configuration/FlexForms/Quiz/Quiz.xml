@@ -1,0 +1,205 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Quiz->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Title -->
+			<settings.quizTitle>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizTitle</label>
+					<config>
+						<type>input</type>
+						<size>30</size>
+					</config>
+				</TCEforms>
+			</settings.quizTitle>
+		<!-- END
+		Title -->
+
+
+		<!-- START
+		Background color-->
+			<settings.quizBgColor>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizBgColor</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.quizBgColor>
+
+			<settings.quizBgColor_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.quizBgColor:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizBgColor</label>
+					<config>
+						<type>input</type>
+						<size>6</size>
+						<wizards>
+							<color>
+								<type>colorbox</type>
+								<dim>20x20</dim>
+								<tableStyle>margin-top:3px;</tableStyle>
+								<module>
+									<name>wizard_colorpicker</name>
+								</module>
+								<JSopenParams>height=550,width=370,status=0,menubar=0,scrollbars=1</JSopenParams>
+								<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+							</color>
+						</wizards>
+						<default>#EF7F01</default>
+						<max>7</max>
+					</config>
+				</TCEforms>
+			</settings.quizBgColor_local>
+		<!-- END
+		Background color -->
+
+
+		<!-- START
+		Card background color -->
+			<settings.quizcardBgColor>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardBgColor</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.quizcardBgColor>
+
+			<settings.quizcardBgColor_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.quizcardBgColor:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardBgColor</label>
+					<config>
+						<type>input</type>
+						<size>6</size>
+						<wizards>
+							<color>
+								<type>colorbox</type>
+								<dim>20x20</dim>
+								<tableStyle>margin-top:3px;</tableStyle>
+								<module>
+									<name>wizard_colorpicker</name>
+								</module>
+								<JSopenParams>height=550,width=370,status=0,menubar=0,scrollbars=1</JSopenParams>
+								<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+							</color>
+						</wizards>
+						<default>#FFFFFF</default>
+						<max>7</max>
+					</config>
+				</TCEforms>
+			</settings.quizcardBgColor_local>
+		<!-- END
+		Card background color -->
+
+
+		<!-- START
+		Card width -->
+			<settings.quizcardWidth>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardWidth</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.quizcardWidth>
+
+			<settings.quizcardWidth_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.quizcardWidth:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardWidth</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.quizcardWidth_local>
+		<!-- END
+		Card width -->
+
+
+		<!-- START
+		Card height -->
+			<settings.quizcardHeight>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardHeight</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.quizcardHeight>
+
+			<settings.quizcardHeight_local>
+				<TCEforms>
+					<exclude>1</exclude>
+					<displayCond>FIELD:settings.quizcardHeight:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quizcardHeight</label>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.quizcardHeight_local>
+		<!-- END
+		Card height -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

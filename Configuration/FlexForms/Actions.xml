@@ -1,0 +1,55 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:mode</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+			<switchableControllerActions>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.what_to_display</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcard</numIndex>
+								<numIndex index="1">Flashcard->list</numIndex>
+							</numIndex>
+							<numIndex index="2" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.drag_n_drop_einordnung</numIndex>
+								<numIndex index="1">Dndeinordnung->list</numIndex>
+							</numIndex>
+							<numIndex index="3" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.drag_n_drop_zuordnung</numIndex>
+								<numIndex index="1">Dndzuordnung->list</numIndex>
+							</numIndex>
+							<numIndex index="4" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.quiz</numIndex>
+								<numIndex index="1">Quiz->list</numIndex>
+							</numIndex>
+							<numIndex index="5" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.question_hint_answer</numIndex>
+								<numIndex index="1">Questionhintanswer->list</numIndex>
+							</numIndex>
+							<numIndex index="6" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.dnd_ranking</numIndex>
+								<numIndex index="1">Dndrank->list;Dndrank->check</numIndex>
+							</numIndex>
+							<numIndex index="7" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.hangman</numIndex>
+								<numIndex index="1">Hangmanquestion->list</numIndex>
+							</numIndex>
+							<numIndex index="8" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.chart</numIndex>
+								<numIndex index="1">Chart->list</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+		</el>
+	</ROOT>
+</T3DataStructure>

@@ -1,0 +1,171 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+			<displayCond>FIELD:sDEF.switchableControllerActions:=:Flashcard->list</displayCond>
+		</TCEforms>
+		<type>array</type>
+		<el>
+
+		<!-- START
+		Line count declaration -->
+			<settings.flashcard_in_one_line>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcard_in_one_line</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.flashcard_in_one_line>
+
+			<settings.flashcard_in_one_line_local>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcard_in_one_line</label>
+					<displayCond>FIELD:settings.flashcard_in_one_line:=:local</displayCond>
+					<config>
+						<type>select</type>
+						<items>
+							<numIndex index="0" type="array">
+								<numIndex index="0">1</numIndex>
+								<numIndex index="1">1</numIndex>
+							</numIndex>
+							<numIndex index="1">
+								<numIndex index="0">2</numIndex>
+								<numIndex index="1">2</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</settings.flashcard_in_one_line_local>
+		<!-- END
+		Line count declaration -->
+
+
+		<!-- START
+		Width declaration -->
+			<settings.flashcardwidth>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardwidth</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.flashcardwidth>
+
+			<settings.flashcardwidth_local>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardwidth</label>
+					<displayCond>FIELD:settings.flashcardwidth:=:local</displayCond>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.flashcardwidth_local>
+		<!-- END
+		Width declaration -->
+
+
+		<!-- START
+		Height declaration -->
+			<settings.flashcardheight>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardheight</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.flashcardheight>
+
+			<settings.flashcardheight_local>
+				<TCEforms>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardheight</label>
+					<displayCond>FIELD:settings.flashcardheight:=:local</displayCond>
+					<config>
+						<type>input</type>
+						<size>3</size>
+						<eval>num</eval>
+					</config>
+				</TCEforms>
+			</settings.flashcardheight_local>
+		<!-- END
+		Height declaration -->
+
+
+		<!-- START
+		Paging declaration -->
+			<settings.flashcardpaging>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardpaging</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:ts</numIndex>
+								<numIndex index="1">ts</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:local</numIndex>
+								<numIndex index="1">local</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.flashcardpaging>
+
+			<settings.flashcardpaging_local>
+				<TCEforms>
+					<displayCond>FIELD:settings.flashcardpaging:=:local</displayCond>
+					<label>LLL:EXT:ltube_toolbox/Resources/Private/Language/locallang.xlf:pi_flexform.flashcardpaging</label>
+					<config>
+						<type>check</type>
+						<default>0</default>
+					</config>
+				</TCEforms>
+			</settings.flashcardpaging_local>
+		<!-- END
+		Paging declaration -->
+
+		</el>
+	</ROOT>
+</T3DataStructure>

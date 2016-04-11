@@ -1,0 +1,13 @@
+{namespace fcard=TYPO3\LtubeToolbox\ViewHelpers}
+
+<!------------------------------------------------------
+    Represents a flashcard with toggle button.
+
+****** Arguments ******
+    fc -> TYPO3\LtubeToolbox\Domain\Model\Flashcard
+-------------------------------------------------------->
+
+<li>
+    <fcard:flash obj="{fc}" />
+    <f:render partial="Flashcard/Button" />
+</li>
